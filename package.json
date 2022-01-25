@@ -2,18 +2,19 @@
   "name": "adonis-api-app",
   "version": "4.1.0",
   "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+  "description": "Criando API para cadastrar e consultar livros favoritados",
   "main": "index.js",
   "scripts": {
     "start": "ENV_SILENT=true node server.js",
-    "test": "node ace test"
+    "test": "node ace test",
+    "dev": "adonis serve --dev"
   },
   "keywords": [
     "adonisjs",
     "adonis-app"
   ],
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "Joana Mespaque",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@adonisjs/ace": "^5.0.8",
