@@ -9,15 +9,14 @@ class FavoriteBookSchema extends Schema {
       table.increments();
       table.timestamps();
       table.string("favorite_description", 500);
-      table.string("book_id", 200).notNullable();
+      table.string("book_id", 200).notNullable().unique();
       table.string("title", 200).notNullable();
       table.string("authors", 300).notNullable();
       table.string("publisher", 150).notNullable();
       table.string("categories", 200).notNullable();
       table.string("infoLink", 300).notNullable();
       table.string("thumbnail", 300).notNullable();
-      table.string("description", 1000).notNullable();
-      table.date("publishedDate").notNullable();
+      table.text("description").notNullable();
       table.integer("pageCount").unsigned().notNullable();
     });
   }

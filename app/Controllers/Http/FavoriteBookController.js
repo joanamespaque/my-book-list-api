@@ -5,17 +5,17 @@ const FavoriteBook = use('App/Models/FavoriteBook')
 class FavoriteBookController {
   async store({ request }) {
     const dataToCreate = request.only([
-      'description',
+      'favorite_description',
       'book_id',
-      'book_title',
-      'book_authors',
-      'book_publisher',
-      'book_categories',
-      'book_info_link',
-      'book_image_link',
-      'book_description',
-      'book_published_date',
-      'book_page_count',
+      'title',
+      'authors',
+      'publisher',
+      'categories',
+      'infoLink',
+      'thumbnail',
+      'description',
+      'publishedDate',
+      'pageCount',
     ]);
     return await FavoriteBook.create(dataToCreate);
   }
